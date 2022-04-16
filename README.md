@@ -1,5 +1,7 @@
 # Morse-code-Generator
-## By Prajwal and Nidheesha
-Things to do : \
-1.Template to refer\
-2.Photos
+
+<i>By Prajwal and Nidheesha</i>
+
+##### Things to do:
+- [ ] Find a template to refer
+- [ ] Find some photos
