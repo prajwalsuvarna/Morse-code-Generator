@@ -3,5 +3,5 @@
 <i>By Prajwal and Nidheesha</i>
 
 ##### Things to do:
-- [ ] Find a template to refer
+- [x] Find a template to refer https://velocity-free-template.webflow.io/
 - [ ] Find some photos
