@@ -7,95 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Morse Gen</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body {
-
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-        }
-
-        header {
-
-            position: fixed;
-            top: 0;
-            z-index: 1;
-            width: 100%;
-            background-color: #1A374D;
-            color: #B1D0E0;
-        }
-
-        .nav_checkbox{
-            display:grid ;
-            grid-template-columns: 2fr 1fr;
-            height: 62px;
-        }
-
-        ul {
-            /* margin-top: 1.5rem; */
-            height: 40px;
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            column-gap: 0.5rem;
-            list-style-type: none;
-            margin:auto;
-            
-            /* justify-content: center; */
-        }
-
-        ul li {
-            /* list-style-type: none; */
-            text-align: center;
-            margin: auto;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #B1D0E0;
-        }
-
-        .logo {
-            height: 30px;
-            width: 30px;
-            padding: 1rem;
-            filter: invert(100%);
-        }
-
-        li button {
-            
-            grid-column: 1 / 4;
-            height: 1.5rem;
-            width: 5rem;
-            background-color: #B1D0E0;
-            color: #406882;
-            border: none;
-            border-radius: 1rem;
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
+    <nav class="nav_checkbox">
+            <img id="logo" src="image/logo.png" alt="Cool Logo">
+        <ul class="content_nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">FEEDBACK</a></li>
+            <button onclick="navigator.clipboard.writeText(window.location.href)">SHARE</button>
+        </ul>
+    </nav>
     <header>
-            <nav class="nav_checkbox">
-                <img class="logo" src="/image/logo.png" alt="">
-                <ul class="content_nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">FEEDBACK</a></li>
-                    <li><button>SHARE</button></li>
-                </ul>
-            </nav>
+
     </header>
-    <section>
-        <p>lorem420</p>
-    </section>
 </body>
 
 </html>
