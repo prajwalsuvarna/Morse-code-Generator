@@ -1,65 +1,96 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-:root{
-    --nav-padding:10px;
-    --logo-size:30px;
-    --nav-height:40px;
-    --primary:#1A374D;
-    --secondary:#B1D0E0;
-    --third:#406882;
-    --fourth:#6998AB;
+:root {
+  --nav-padding: 10px;
+  --logo-size: 30px;
+  --start-margin: 40px;
+  --primary: #1a374d;
+  --secondary: #b1d0e0;
+  --third: #406882;
+  --fourth: #6998ab;
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: var(--primary);
-    color:var(--secondary);
-    display: grid;
-    grid-template-columns: 1fr auto;
-    padding: var(--nav-padding);
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: var(--nav-padding);
 }
 
-nav ul{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    column-gap: 0.5rem;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 0.5rem;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
 }
-nav ul li
-{
-    list-style-type: none;
-    height: fit-content;
-    width: fit-content;
+nav ul li {
+  list-style-type: none;
+  height: fit-content;
+  width: fit-content;
 }
-nav ul li a{
-    text-decoration: none;
-    color:var(--secondary);
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary);
 }
-#logo
-{
-    height:var(--logo-size);
-    width:var(--logo-size);
-    filter: invert(100%);
+#logo {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  filter: invert(100%);
 }
 
-nav ul button{
-    height:1.5rem;
-    width:5rem;
-    background-color: var(--secondary);
-    color:var(--third);
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
+nav ul button {
+  height: 1.5rem;
+  width: 5rem;
+  background-color: var(--secondary);
+  color: var(--third);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+header {
+  margin-top: var(--start-margin);
+  height: 200px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 200px;
+  background: url("https://www.intrusion.com/wp-content/uploads/2021/08/morse-code-blog-thumb-552x350-1.jpg")
+    rgb(52 78 255 / 60%) center center/cover no-repeat;
+  z-index: -1;
+  filter: grayscale(75%);
+  background-blend-mode: darken;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: var(--secondary);
+  text-align: center;
+  text-shadow: 2px 2px var(--primary);
+}
+
+main {
+  margin-top: var(--start-margin);
+}
+
+main div label {
+  display: block;
 }
