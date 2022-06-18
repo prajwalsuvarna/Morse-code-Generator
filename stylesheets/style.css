@@ -103,20 +103,25 @@ main div label {
 
 #container
 {  
-  margin:20px;
+  width: 100%;
   margin-bottom: 70px;
   display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows: auto auto ;
+  grid-template-columns:repeat(auto-fit,min(500px,100vw));
+  grid-template-rows: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 70px;
+  justify-content: space-evenly;
+}
+
+textarea{
+  width: 100%;
 }
 .buttons
 {
  display:flex;
  justify-content: center;
  align-items: center;
-
+  flex-wrap: wrap;
 }
 .buttons button
 {
