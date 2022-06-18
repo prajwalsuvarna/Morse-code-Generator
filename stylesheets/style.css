@@ -92,7 +92,7 @@ header h1 {
   text-shadow: 3px 3px var(--third) ,5px 5px 5px var(--third);
 }
 
-
+/* convertor main part */
 main {
   margin-top: var(--start-margin);
 }
@@ -138,7 +138,8 @@ main div label {
   margin:1rem;
   padding:1rem;
 }
-
+ 
+/* information section */
 .info h2,h3
 {
   padding:0.8rem 0.8rem 0.8rem 0;
@@ -167,4 +168,9 @@ main div label {
 {
   
   border-right: 1px solid rgb(0, 0, 0);
+}
+
+.box:hover {
+  background-color: var(--primary);
+  color:var(--secondary);
 }
