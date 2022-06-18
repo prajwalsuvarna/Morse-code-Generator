@@ -15,6 +15,7 @@
   --fourth: #6998ab;
 }
 
+/*Nav bar*/
 nav {
   position: fixed;
   top: 0;
@@ -64,6 +65,7 @@ nav ul button {
   cursor: pointer;
 }
 
+/*Header*/
 header {
   display: grid;
   align-items: center;
@@ -90,6 +92,28 @@ header h1 {
   font-size: 4rem;
   text-align: center;
   text-shadow: 3px 3px var(--third) ,5px 5px 5px var(--third);
+}
+
+#span1{
+  animation: blink 3s linear 0s infinite;
+}
+
+#span2{
+  animation: blink 3s linear 1s infinite;
+}
+
+#span3{
+  animation: blink 3s linear 2s infinite;
+}
+
+
+@keyframes blink {
+  0%{
+    color: var(--primary);
+  }
+  33%{
+    color: var(--secondary);
+  }
 }
 
 /* convertor main part */
