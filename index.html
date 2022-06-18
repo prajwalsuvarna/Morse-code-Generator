@@ -17,7 +17,7 @@
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">FEEDBACK</a></li>
-            <button onclick="navigator.clipboard.writeText(window.location.href)">SHARE</button>
+            <!-- <button onclick="navigator.clipboard.writeText(window.location.href)">SHARE</button> -->
         </ul>
     </nav>
     <header>
@@ -28,16 +28,143 @@
             reprehenderit. Aut, quasi id.
         </p>
     </header>
-    <main>
-        <div>
+    <main id="container">
+        <div class="text">
             <label for="eng-text">English text:</label>
-            <textarea id="eng-text" name="eng-text" rows="4" cols="50"></textarea>
+            <textarea id="eng-text" name="eng-text" rows="8" cols="70"></textarea>
         </div>
-        <div>
+        <div class="buttons ">
+            <button>Play</button><button>Pause</button><button>Switch</button><button>Download</button><button>Light</button>
+        </div>
+        <div class="text">
             <label for="eng-text">Morse Code:</label>
-            <textarea id="eng-text" name="eng-text" rows="4" cols="50"></textarea>
+            <textarea id="eng-text" name="eng-text" rows="8" cols="70"></textarea>
+        </div>
+        <div class="buttons box1">
+            gjfgskdfgkw
         </div>
     </main>
+    <section class="info">
+        <h2>Morse code alphabet</h2>
+        <h3>Latin</h3>
+        <div class="data">
+            <div class="box">A</div>
+            <div class="box">.-</div>
+            <div class="box">B</div>
+            <div class="box">-...</div>
+            <div class="box">C</div>
+            <div class="box">-.-.</div>
+            <div class="box">D</div>
+            <div class="box">-..</div>
+            <div class="box">E</div>
+            <div class="box">.</div>
+            <div class="box">F</div>
+            <div class="box">..-.</div>
+            <div class="box">G</div>
+            <div class="box border-right">--.</div>
+        </div>
+        <div class="data">
+            <div class="box">H</div>
+            <div class="box">....</div>
+            <div class="box">I</div>
+            <div class="box">..</div>
+            <div class="box">J</div>
+            <div class="box">.---</div>
+            <div class="box">K</div>
+            <div class="box">-.-</div>
+            <div class="box">L</div>
+            <div class="box">.-..</div>
+            <div class="box">M</div>
+            <div class="box">--</div>
+            <div class="box">N</div>
+            <div class="box border-right">-.</div>
+        </div>
+        <div class="data">
+            <div class="box">O</div>
+            <div class="box">---</div>
+            <div class="box">P</div>
+            <div class="box">.--.</div>
+            <div class="box">Q</div>
+            <div class="box">--.-</div>
+            <div class="box">R</div>
+            <div class="box">.-.</div>
+            <div class="box">S</div>
+            <div class="box">...</div>
+            <div class="box b-b">T</div>
+            <div class="box b-b">-</div>
+            <div class="box b-b">U</div>
+            <div class="box border-right b-b">..-</div>
+        </div>
+
+        <div class="data">
+            <div class="box b-b">V</div>
+            <div class="box b-b">...-</div>
+            <div class="box b-b">W</div>
+            <div class="box b-b">.--</div>
+            <div class="box b-b">X</div>
+            <div class="box b-b">-..-</div>
+            <div class="box b-b">Y</div>
+            <div class="box b-b">-.--</div>
+            <div class="box b-b">Z</div>
+            <div class="box b-b border-right">--..</div>  
+        </div>
+        <h3>Numbers</h3>
+        <div class="data">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box b-b">7</div>
+            <div class="box b-b">8</div>
+            <div class="box b-b">9</div>
+            <div class="box b-b">10</div>
+            <div class="box b-b">11</div>
+            <div class="box b-b">12</div>
+            <div class="box b-b">13</div>
+            <div class="box b-b border-right">14</div>
+        </div>
+        <div class="data">
+            <div class="box b-b">1</div>
+            <div class="box b-b">2</div>
+            <div class="box b-b">3</div>
+            <div class="box b-b">4</div>
+            <div class="box b-b">5</div>
+            <div class="box b-b border-right">6</div>
+        </div>
+        <h3>Punctuation</h3>
+        <div class="data">
+            <div class="box">1</div>
+            <div class="box">-----</div>
+            <div class="box">2</div>
+            <div class="box">.----</div>
+            <div class="box">3</div>
+            <div class="box">..---</div>
+            <div class="box">4</div>
+            <div class="box">....-</div>
+            <div class="box">5</div>
+            <div class="box">.....</div>
+            <div class="box">6</div>
+            <div class="box">-....</div>
+            <div class="box b-b">7</div>
+            <div class="box b-b border-right">--...</div>
+        </div>
+        <div class="data">
+            <div class="box b-b">8</div>
+            <div class="box b-b">-----</div>
+            <div class="box b-b">1</div>
+            <div class="box b-b"></div>
+            <div class="box b-b">2</div>
+            <div class="box b-b">6</div>
+            <div class="box b-b">3</div>
+            <div class="box b-b">8</div>
+            <div class="box b-b">9</div>
+            <div class="box b-b">10</div>
+            <div class="box b-b">11</div>
+            <div class="box b-b border-right">14</div>
+        </div>
+    </section>
 </body>
 
 </html>
