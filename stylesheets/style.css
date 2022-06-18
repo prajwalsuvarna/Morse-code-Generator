@@ -131,10 +131,10 @@ main div label {
   margin-bottom: 70px;
   display:grid;
   grid-template-columns:repeat(auto-fit,min(500px,100vw));
-  grid-template-rows: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 70px;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 textarea{
@@ -160,6 +160,7 @@ textarea{
 .box1
 {
   background-color: black;
+  height: 130px;
 }
 
 .info
