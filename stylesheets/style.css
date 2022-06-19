@@ -15,6 +15,7 @@
   --fourth: #6998ab;
 }
 
+/*Nav bar*/
 nav {
   position: fixed;
   top: 0;
@@ -64,13 +65,14 @@ nav ul button {
   cursor: pointer;
 }
 
+/*Header*/
 header {
   display: grid;
   align-items: center;
   justify-content: center;
   margin-top: var(--start-margin);
   width: 100%;
-  height: 300px;
+  height: 400px;
   color: var(--secondary);
   padding: 10px 60px;
   position: relative;
@@ -92,6 +94,28 @@ header h1 {
   text-shadow: 3px 3px var(--third) ,5px 5px 5px var(--third);
 }
 
+#span1{
+  animation: blink 3s linear 0s infinite;
+}
+
+#span2{
+  animation: blink 3s linear 1s infinite;
+}
+
+#span3{
+  animation: blink 3s linear 2s infinite;
+}
+
+
+@keyframes blink {
+  0%{
+    color: var(--primary);
+  }
+  33%{
+    color: var(--secondary);
+  }
+}
+
 /* convertor main part */
 main {
   margin-top: var(--start-margin);
@@ -107,10 +131,10 @@ main div label {
   margin-bottom: 70px;
   display:grid;
   grid-template-columns:repeat(auto-fit,min(500px,100vw));
-  grid-template-rows: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 70px;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 textarea{
@@ -136,6 +160,7 @@ textarea{
 .box1
 {
   background-color: black;
+  height: 130px;
 }
 
 .info
