@@ -1,0 +1,41 @@
+h2{
+    width: fit-content;
+    margin: auto;
+    margin-top: var(--start-margin);
+    padding-top:100px;
+}
+#wrapper{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+}
+#list{
+    position: relative;
+    margin-top: var(--start-margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    transform: translateX(400px);
+    animation: slide 40s linear 0s infinite ;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(400px);
+    }
+    75%{
+        transform: translateX(-400px);
+    }
+}
+#list div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+}

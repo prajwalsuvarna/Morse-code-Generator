@@ -1,0 +1,129 @@
+header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--start-margin);
+  width: 100%;
+  height: 400px;
+  color: var(--secondary);
+  padding: 10px 60px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: url("https://media.giphy.com/media/4AUH1t6ccRfhe/giphy.gif")
+    rgb(26 55 77 / 75%) center center/cover;
+  z-index: -1;
+  background-blend-mode: darken;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 3px 3px var(--third), 5px 5px 5px var(--third);
+}
+
+#span1 {
+  animation: blink 3s linear 0s infinite;
+}
+
+#span2 {
+  animation: blink 3s linear 1s infinite;
+}
+
+#span3 {
+  animation: blink 3s linear 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: var(--primary);
+  }
+  33% {
+    color: var(--secondary);
+  }
+}
+
+/* convertor main part */
+main {
+  margin-top: var(--start-margin);
+}
+
+main div label {
+  display: block;
+}
+
+#container {
+  width: 100%;
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(500px, 100vw));
+  grid-column-gap: 20px;
+  grid-row-gap: 70px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.buttons button {
+  color: var(--secondary);
+  margin: 0.7rem;
+  background-color: var(--third);
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+
+.box1 {
+  background-color: black;
+  height: 130px;
+}
+
+.info {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* information section */
+.info h2,
+h3 {
+  padding: 0.8rem 0.8rem 0.8rem 0;
+}
+.data {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-right: none;
+  border-bottom: none;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.b-b {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.border-right {
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.box:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
