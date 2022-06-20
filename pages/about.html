@@ -86,10 +86,16 @@
                     cir[i].style.transformOrigin="100% 50%"
                     cir[i].style.transform="perspective(300px) rotateY(-30deg)"
                 }
+                else if(i+2===l)
+                {
+                    cir[i].style.opacity=0;
+                    cir[i].style.transformOrigin="100% 50%"
+                    cir[i].style.transform="perspective(300px) rotateY(-90deg)"
+                }
                 else{
                     cir[i].style.opacity=0;  
                     cir[i].style.transformOrigin="0% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(0deg)"
+                    cir[i].style.transform="perspective(300px) rotateY(90deg)"
                 }
                 
             }
