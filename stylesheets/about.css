@@ -1,6 +1,3 @@
-body{
-
-}
 h2{
     width: fit-content;
     margin: auto;
@@ -14,6 +11,17 @@ h2{
     padding-top:50px;
     overflow-x:hidden;
     height: 500px;
+    position: relative;
+}
+#btn1{
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+}
+#btn2{
+    position: absolute;
+    right: 20%;
+    z-index: 1;
 }
 #list{
     display: flex;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../stylesheets/about.css">
     <link rel="icon" type="image/png" href="../image/logo.png"/>
+    <script defer src="../scripts/about.js"></script>
 </head>
 <body>
 <body>
@@ -22,6 +23,7 @@
     </nav>
     <h2>MORSE</h2>
     <section id="wrapper">
+        <button id="btn1" onclick={Left()}>MoveLeft</button>
         <section id="list">
             <div id="cir1" class="cir">111</div>
             <div id="cir2" class="cir">222</div>
@@ -29,77 +31,10 @@
             <div id="cir4" class="cir">444</div>
             <div id="cir5" class="cir">555</div>
         </section>
+        <button id="btn2" onclick={Right()}>MoveRight</button>
     </section>
     <script>
-        const list=document.getElementById("list");
-        const cir=document.querySelectorAll("#list div");
-        let k=640;
-        let l=-1;
-        let flag=true
-        setInterval(()=>{
-            list.style.transform="translateX("+k+"px)"
-            if(flag)
-            {
-                k-=320
-                l++;
-            }
-            else
-            {
-                k+=320
-                l--
-            }
-
-            calc()
-
-
-            if(l===4)
-            {
-                k=-320
-                flag=false
-            }
-            if(l===0)
-            {
-                k=320
-                flag=true
-            }
-            
-        },8000)
-        const calc=()=>{
-            for(let i=0;i<5;i++)
-            {
-
-                if(i===l)
-                {
-                    cir[i].style.opacity=1;
-                    cir[i].style.transformOrigin="50% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(0deg)"
-                }        
-                else if(i-1===l)
-                {
-                    cir[i].style.opacity=1;
-                    cir[i].style.transformOrigin="0% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(30deg)"
-                }
-                else if(i+1===l)
-                {
-                    cir[i].style.opacity=1;
-                    cir[i].style.transformOrigin="100% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(-30deg)"
-                }
-                else if(i+2===l)
-                {
-                    cir[i].style.opacity=0;
-                    cir[i].style.transformOrigin="100% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(-90deg)"
-                }
-                else{
-                    cir[i].style.opacity=0;  
-                    cir[i].style.transformOrigin="0% 50%"
-                    cir[i].style.transform="perspective(300px) rotateY(90deg)"
-                }
-                
-            }
-        }
+   
     </script>
 </body>
 </html>
