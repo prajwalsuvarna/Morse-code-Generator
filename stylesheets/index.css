@@ -8,6 +8,8 @@ header {
   color: var(--secondary);
   padding: 10px 60px;
   position: relative;
+  transition:all ease-out 0.5s;
+  box-shadow: 20px 5px 10px rgb(137, 137, 137);
 }
 
 header::before {
