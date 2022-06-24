@@ -25,17 +25,32 @@ nav {
   color: var(--secondary);
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
   padding: var(--nav-padding);
+}
+#ham{
+  display: grid;
+  grid-template-rows: auto;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  align-items: center;
+}
+#ham span{
+  background-color: var(--secondary);
+  width: 30px;
+  height: 1.5px;
 }
 
 nav ul {
+  display: none;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  column-gap: 0.5rem;
   list-style-type: none;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   column-gap: 20px;
+  row-gap: 10px;
 }
 
 nav ul li {
