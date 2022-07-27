@@ -78,6 +78,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+ 
 }
 .buttons button {
   color: var(--secondary);
@@ -86,14 +87,24 @@ textarea {
   border: none;
   padding: 0.5rem 0.8rem;
   border-radius: 10px;
+  text-align: center;
+  cursor:pointer;
 }
-
+button:hover {
+  
+  background-color: #435d6e ;
+}
+.buttons span{
+  vertical-align: middle;
+  padding:0.5px;
+}
 .box1 {
   background-color: black;
   height: 130px;
 }
 
 .info {
+  font-size: 13px;
   margin: 1rem;
   padding: 1rem;
 }
@@ -106,6 +117,7 @@ h3 {
 .data {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
+  /* grid-template-columns: auto; */
 }
 .box {
   display: flex;
@@ -116,6 +128,7 @@ h3 {
   border-bottom: none;
   padding: 0;
   transition: all 0.3s ease 0s;
+  min-width: 35px;
 }
 
 .b-b {
@@ -128,4 +141,13 @@ h3 {
 .box:hover {
   background-color: var(--primary);
   color: var(--secondary);
+}
+
+@media screen and (max-width: 700px) {
+  .data {
+    display: grid;
+  grid-template-columns : repeat(14, minmax(20px, 1fr));
+
+  }
+  
 }
