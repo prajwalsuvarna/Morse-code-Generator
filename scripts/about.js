@@ -1,6 +1,6 @@
 const list=document.getElementById("list");
 const cir=document.querySelectorAll("#list div");
-let l=0;
+let l=0
 let moveRight=true
 let moved=0
 let time=0
@@ -10,7 +10,7 @@ setInterval(()=>{
         moved=0
     else{
         next()
-        render(l);
+        render(l)
         console.log("rendered")
     }
 },4000)
@@ -48,11 +48,11 @@ function next(){
     if(moveRight)
     {
         if(l===4){
-            moveRight=false
-            l--;
+            moveRight=false 
+            l--
         }
         else{
-            l++;
+            l++
         }
     }
     else{
@@ -73,6 +73,12 @@ function render(l){
 
     calc(l)
 
+}
+
+function disp(x)
+{
+moved=1
+render(x)
 }
 
 const calc=(l)=>{
@@ -111,4 +117,3 @@ const calc=(l)=>{
         
     }
 }
-
