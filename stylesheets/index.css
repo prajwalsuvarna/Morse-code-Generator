@@ -134,12 +134,3 @@ h3 {
   background-color: var(--primary);
   color: var(--secondary);
 }
-
-@media screen and (max-width: 700px) {
-  .data {
-    display: grid;
-  grid-template-columns : repeat(14, minmax(20px, 1fr));
-
-  }
-  
-}
