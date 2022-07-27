@@ -15,6 +15,10 @@
   --fourth: #6998ab;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /*Nav bar*/
 nav {
   position: fixed;

@@ -8,7 +8,7 @@ header {
   color: var(--secondary);
   padding: 10px 60px;
   position: relative;
-  transition:all ease-out 0.5s;
+  transition:all ease-out 1s;
   box-shadow: 20px 5px 10px rgb(137, 137, 137);
 }
 
@@ -105,27 +105,21 @@ h3 {
 }
 .data {
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: repeat(auto-fill,50px);
+  grid-gap:1px 1px;
 }
-.box {
+.data div {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(0, 0, 0);
-  border-right: none;
-  border-bottom: none;
+  box-shadow: 0px 0px 6px 1px #0000002b;
   padding: 0;
   transition: all 0.3s ease 0s;
+  height: 50px;
 }
 
-.b-b {
-  border-bottom: 1px solid rgb(0, 0, 0);
-}
-.border-right {
-  border-right: 1px solid rgb(0, 0, 0);
-}
-
-.box:hover {
+.data div:hover {
   background-color: var(--primary);
   color: var(--secondary);
 }
