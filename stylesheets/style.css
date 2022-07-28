@@ -15,6 +15,10 @@
   --fourth: #6998ab;
 }
 
+html{
+  min-height: 100%;
+}
+
 body{
   overflow-x: hidden;
 }
