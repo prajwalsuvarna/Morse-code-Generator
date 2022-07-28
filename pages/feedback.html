@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="../stylesheets/feedbackstyle.css">    
 <link rel="stylesheet" href="../stylesheets/style.css">    
 <script defer src="../scripts/nav.js"></script>
+<script defer src="../scripts/feedback.js"></script>
 </head>    
 <body>    
     <nav class="nav_checkbox">
@@ -32,7 +33,7 @@
         <label for="fname">First Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>    
       </div>    
     </div>    
     <div class="row">    
@@ -40,7 +41,7 @@
         <label for="lname">Last Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>    
       </div>    
     </div>    
     <div class="row">    
@@ -48,7 +49,7 @@
           <label for="email">Mail Id</label>    
         </div>    
         <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id.." required>    
         </div>    
       </div>    
     <div class="row">    
@@ -56,8 +57,8 @@
         <label for="country">Country</label>    
       </div>    
       <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
+        <select id="country" name="country" required>    
+          <option hidden disabled selected value>Select Country</option>    
           <option value="australia">Australia</option>    
           <option value="canada">Canada</option>    
           <option value="usa">USA</option>    
@@ -73,7 +74,7 @@
         <label for="feed_back">Feed Back</label>    
       </div>    
       <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>    
       </div>    
     </div>    
     <div class="row ">  
@@ -86,6 +87,9 @@
     </div>    
   </form>    
 </section>    
+
+<section class="container" style="text-align: center; font-size: 40px;">
+</section>
     
 </body>    
 </html
