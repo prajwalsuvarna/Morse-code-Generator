@@ -78,7 +78,8 @@ function render(l){
 function disp(x)
 {
 moved=1
-render(x)
+l=x
+render(l)
 }
 
 const calc=(l)=>{
@@ -91,28 +92,28 @@ const calc=(l)=>{
             cir[i].style.transformOrigin="50% 50%"
             cir[i].style.transform="perspective(300px) rotateY(0deg)"
         }        
-        else if(i-1===l)
+        else if(i===l+1)
         {
             cir[i].style.opacity=1;
             cir[i].style.transformOrigin="0% 50%"
             cir[i].style.transform="perspective(300px) rotateY(30deg)"
         }
-        else if(i+1===l)
+        else if(i===l-1)
         {
             cir[i].style.opacity=1;
             cir[i].style.transformOrigin="100% 50%"
             cir[i].style.transform="perspective(300px) rotateY(-30deg)"
         }
-        else if(i+2===l)
+        else if(i<l-1)
         {
             cir[i].style.opacity=0;
             cir[i].style.transformOrigin="100% 50%"
-            cir[i].style.transform="perspective(300px) rotateY(-90deg)"
+            cir[i].style.transform="perspective(300px) rotateY(-60deg)"
         }
         else{
             cir[i].style.opacity=0;  
             cir[i].style.transformOrigin="0% 50%"
-            cir[i].style.transform="perspective(300px) rotateY(90deg)"
+            cir[i].style.transform="perspective(300px) rotateY(60deg)"
         }
         
     }
