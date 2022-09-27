@@ -10,4 +10,4 @@
 - [ ] redesigning of feedback form
 
 ##### HOMEPAGE :
-![Screenshot (189)](https://user-images.githubusercontent.com/97435165/192594353-b7d46019-012e-4ae7-bd39-3d777821ff23.png)
+![Screenshot (192)](https://user-images.githubusercontent.com/97435165/192594728-c01c6b25-e40e-4428-b784-509718f8fa17.png)
