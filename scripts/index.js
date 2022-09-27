@@ -21,7 +21,8 @@ const morse_codes= [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---"
 let mcode=[];
 
 // Encoding part :
-function Encode() {
+const Enc=document.getElementById("eng-text");
+Enc.addEventListener("keyup", () => { 
 a=document.getElementById("eng-text").value.toUpperCase();
 a= a.split("");
 for (let x in a) {
@@ -32,11 +33,10 @@ mcode=mcode.toString().replace(/,/g, ' ');
 console.log(mcode);
 document.getElementById("mrs-cod").value=mcode;
 mcode=[];
-}
+});
 
 //Decoding Part :
-
-function Decode() {
+document.getElementById("mrs-cod").addEventListener("keyup", () => {
 a=document.getElementById("mrs-cod").value;
 a= a.split(" ");
 console.log(a);
@@ -48,6 +48,6 @@ mcode=mcode.toString().replace(/,/g, '');
 console.log(mcode);
 document.getElementById("eng-text").value=mcode;
 mcode=[];
-}
+});
 
 //Light flash Functionality
