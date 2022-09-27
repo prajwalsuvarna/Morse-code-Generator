@@ -3,7 +3,7 @@
 
 
 ##### Things to do:
-- [ ] Encodind/Decoding Function conversion into event listeners
+- [x] Encodind/Decoding Function conversion into event listeners
 - [ ] Light
 - [ ] Nav Bar styling 
 - [ ] About section modification and addition of Images
