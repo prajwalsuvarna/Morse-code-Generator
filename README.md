@@ -3,7 +3,7 @@
 
 
 ##### Things to do:
-- [ ] Morse code encoding and decoding
+- [ ] Encodind/Decoding Function conversion into event listeners
 - [ ] Light
 - [ ] Nav Bar styling 
 - [ ] About section modification and addition of Images
