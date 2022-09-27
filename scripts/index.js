@@ -11,3 +11,43 @@ ele.addEventListener("mousemove",(e)=>{
 ele.addEventListener("mouseout",(e)=>{
     ele.style.transform=``;
 })
+
+// Morse code Logic 
+
+let a;
+let b;
+const alp=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',' ','0','1','2','3','4','5','6','7','8','9'];
+const morse_codes= [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..","/","-----",".----","..---","...--","....-",".....","-....","--...","---..","----."];
+let mcode=[];
+
+// Encoding part :
+function Encode() {
+a=document.getElementById("eng-text").value.toUpperCase();
+a= a.split("");
+for (let x in a) {
+  b=alp.indexOf(a[x]);
+ mcode.push(morse_codes[b]);
+}
+mcode=mcode.toString().replace(/,/g, ' ');
+console.log(mcode);
+document.getElementById("mrs-cod").value=mcode;
+mcode=[];
+}
+
+//Decoding Part :
+
+function Decode() {
+a=document.getElementById("mrs-cod").value;
+a= a.split(" ");
+console.log(a);
+for (let x in a) {
+  b=morse_codes.indexOf(a[x]);
+ mcode.push(alp[b]);
+}
+mcode=mcode.toString().replace(/,/g, '');
+console.log(mcode);
+document.getElementById("eng-text").value=mcode;
+mcode=[];
+}
+
+//Light flash Functionality

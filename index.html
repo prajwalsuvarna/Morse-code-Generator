@@ -41,10 +41,10 @@
     <main id="container">
         <div class="text">
             <label for="eng-text">English text:</label>
-            <textarea id="eng-text" name="eng-text" rows="8" cols="70"></textarea>
+            <textarea id="eng-text" name="eng-text" onkeyup="Encode()" rows="8" cols="70"></textarea>
         </div>
         <div class="buttons">
-            <button><span class="material-symbols-outlined">
+            <button onclick="light()"><span class="material-symbols-outlined">
                 play_arrow
                 </span>Play</button><button><span class="material-symbols-outlined">
                     pause
@@ -59,12 +59,12 @@
                 emoji_objects
                 </span>Light</button>
         </div>
-        <div class="text">
-            <label for="eng-text">Morse Code:</label>
-            <textarea id="eng-text" name="eng-text" rows="8" cols="70"></textarea>
+        <div class="mrs-cod">
+            <label for="mrs-cod">Morse Code:</label>
+            <textarea id="mrs-cod" name="mrs-cod"  onkeyup="Decode() " rows="8" cols="70"></textarea>
         </div>
-        <div class="box1">
-            gjfgskdfgkw
+        <div id="light" class="box1">
+    
         </div>
     </main>
     <section class="info">
@@ -192,6 +192,7 @@
             <div>--...-</div>
         </div>
     </section>
+    <script defer src="./scripts/index.js"></script>
 </body>
 
 </html>
