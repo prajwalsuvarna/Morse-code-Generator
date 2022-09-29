@@ -8,7 +8,7 @@
 - [x] Nav Bar styling 
 - [ ] About section modification and addition of Images
 - [ ] redesigning of feedback form
-- [ ] responsive design
+- [ ] responsive design fixes
 
 ##### HOMEPAGE :
 ![Screenshot (192)](https://user-images.githubusercontent.com/97435165/192594728-c01c6b25-e40e-4428-b784-509718f8fa17.png)
