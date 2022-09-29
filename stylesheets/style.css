@@ -7,7 +7,7 @@
 
 :root {
   --nav-padding: 10px;
-  --logo-size: 30px;
+  --logo-size: 40px;
   --start-margin: 50px;
   --primary: #1a374d;
   --secondary: #b1d0e0;
@@ -36,6 +36,42 @@ nav {
   grid-template-rows: auto auto;
   padding: var(--nav-padding);
 }
+
+/* Navbar styling */
+.nav-link {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(226, 222, 222);
+  padding: 15px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color:grey;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
 #ham{
   display: grid;
   grid-template-rows: auto;

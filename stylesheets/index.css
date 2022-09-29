@@ -55,6 +55,8 @@ main {
   margin-top: var(--start-margin);
 }
 
+
+
 main div label {
   display: block;
 }
@@ -142,3 +144,5 @@ h3 {
   color: var(--secondary);
   transform:scale(1.5);
 }
+
+/* Nav bar  */
