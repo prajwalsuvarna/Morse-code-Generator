@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Morse Gen</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="icon" type="image/png" href="../image/logo.png" />
+    <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/nav.js"></script>
+</head>
+
+<body>
+    <nav class="nav_checkbox">
+        <img id="logo" src="image/logo.png" alt="Cool Logo">
+        <div id="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="content_nav">
+            <li><a class="nav-link nav-link-ltr" href="index.html">HOME</a></li>
+            <li><a  class="nav-link nav-link-ltr" href="pages/about.html">ABOUT</a></li>
+            <li><a class="nav-link nav-link-ltr" href="pages/feedback.html">FEEDBACK</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Morse CODES</h1>
+        <h3>
+            <i>"<span id="span1">TAP</span>
+                <span id="span2">TAP</span>
+                <span id="span3">TAP</span>
+                IS ALL YOU NEED TO COMMUNICATE"</i>
+        </h3>
+    </header>
+    <main id="container">
+        <div class="text">
+            <label for="eng-text">English text:</label>
+            <textarea id="eng-text" name="eng-text"  rows="8" cols="70"></textarea>
+        </div>
+        <div class="buttons">
+            <button id="btn"><span class="material-symbols-outlined">
+                play_arrow
+                </span>Play</button><button><span class="material-symbols-outlined">
+                    pause
+                    </span>Pause</button>
+            <button><span
+                    class="material-symbols-outlined">
+                    arrow_downward
+                </span>Download</button>
+            <button><span class="material-symbols-outlined">
+                emoji_objects
+                </span>Light</button>
+        </div>
+        <div class="mrs-cod">
+            <label for="mrs-cod">Morse Code:</label>
+            <textarea id="mrs-cod" name="mrs-cod"   rows="8" cols="70"></textarea>
+        </div>
+        <div id="light" class="box1">
+    
+        </div>
+    </main>
+    <section class="info">
+        <h2>Morse code alphabet</h2>
+        <h3>Latin</h3>
+        <div class="data">
+            <div>A</div>
+            <div>.-</div>
+            <div>B</div>
+            <div>-...</div>
+            <div>C</div>
+            <div>-.-.</div>
+            <div>D</div>
+            <div>-..</div>
+            <div>E</div>
+            <div>.</div>
+            <div>F</div>
+            <div>..-.</div>
+            <div>G</div>
+            <div>--.</div>
+            <div>H</div>
+            <div>....</div>
+            <div>I</div>
+            <div>..</div>
+            <div>J</div>
+            <div>.---</div>
+            <div>K</div>
+            <div>-.-</div>
+            <div>L</div>
+            <div>.-..</div>
+            <div>M</div>
+            <div>--</div>
+            <div>N</div>
+            <div>-.</div>
+            <div>O</div>
+            <div>---</div>
+            <div>P</div>
+            <div>.--.</div>
+            <div>Q</div>
+            <div>--.-</div>
+            <div>R</div>
+            <div>.-.</div>
+            <div>S</div>
+            <div>...</div>
+            <div>T</div>
+            <div>-</div>
+            <div>U</div>
+            <div>..-</div>
+            <div>V</div>
+            <div>...-</div>
+            <div>W</div>
+            <div>.--</div>
+            <div>X</div>
+            <div>-..-</div>
+            <div>Y</div>
+            <div>-.--</div>
+            <div>Z</div>
+            <div>--..</div>  
+        </div>
+        <h3>Numbers</h3>
+        <div class="data">
+            <div>0</div>
+            <div>-----</div>
+            <div>1</div>
+            <div>.----</div>
+            <div>2</div>
+            <div>..---</div>
+            <div>3</div>
+            <div>...--</div>
+            <div>4</div>
+            <div>....-</div>
+            <div>5</div>
+            <div>.....</div>
+            <div>6</div>
+            <div>-....</div>
+            <div>7</div>
+            <div>--...</div>
+            <div>8</div>
+            <div>---..</div>
+            <div>9</div>
+            <div>----.</div>
+            
+        </div>
+        <h3>Punctuation</h3>
+        <div class="data">
+            <div>.</div>
+            <div>.-.-.-</div>
+            <div>,</div>
+            <div>.----</div>
+            <div>?</div>
+            <div>..---</div>
+            <div>'</div>
+            <div>....-</div>
+            <div>!</div>
+            <div>.....</div>
+            <div>/</div>
+            <div>-....</div>
+            <div>(</div>
+            <div>--...</div>
+            <div>)</div>
+            <div>-----</div>
+            <div>&</div>
+            <div>.-...</div>
+            <div>:</div>
+            <div>---...</div>
+            <div>;</div>
+            <div>-.-.-.</div>
+            <div>=</div>
+            <div>-...-</div>
+            <div>+</div>
+            <div>.-.-.</div>
+            <div>-</div>
+            <div>-....-</div>
+            <div>_</div>
+            <div>..--.-</div>
+            <div>"</div>
+            <div>.-..-.</div>
+            <div>$</div>
+            <div>...-..-</div>
+            <div>@</div>
+            <div>..--.-</div>
+            <div>¿</div>
+            <div>.._.-</div>
+            <div>¡</div>
+            <div>--...-</div>
+        </div>
+    </section>
+    <script defer src="./scripts/index.js"></script>
+</body>
+
+</html>
