@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="icon" type="image/png" href="../image/logo.png" />
-    <script defer src="./scripts/index.js"></script>
-    <script defer src="./scripts/nav.js"></script>
 </head>
 
 <body>
@@ -46,16 +44,16 @@
             <textarea id="eng-text" name="eng-text"  rows="8" cols="70"></textarea>
         </div>
         <div class="buttons">
-            <button id="btn"><span class="material-symbols-outlined">
+            <button id="btn" onclick="play()"><span class="material-symbols-outlined">
                 play_arrow
-                </span>Play</button><button><span class="material-symbols-outlined">
-                    pause
-                    </span>Pause</button>
+                </span>Play</button><button onclick="stop()"><span class="material-symbols-outlined">
+                    stop
+                    </span>Stop</button>
             <button><span
                     class="material-symbols-outlined">
                     arrow_downward
                 </span>Download</button>
-            <button><span class="material-symbols-outlined">
+            <button onclick="blink()"><span class="material-symbols-outlined">
                 emoji_objects
                 </span>Light</button>
         </div>

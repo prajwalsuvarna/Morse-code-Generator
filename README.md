@@ -4,7 +4,7 @@
 
 ##### Things to do:
 - [x] Encodind/Decoding Function conversion into event listeners
-- [ ] Light
+- [x] Light
 - [x] Nav Bar styling 
 - [ ] About section modification and API usage
 - [x] redesigning of feedback form
