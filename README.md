@@ -7,7 +7,7 @@
 - [ ] Light
 - [x] Nav Bar styling 
 - [ ] About section modification and addition of Images
-- [ ] redesigning of feedback form
+- [x] redesigning of feedback form
 - [ ] responsive design fixes
 
 ##### HOMEPAGE :
