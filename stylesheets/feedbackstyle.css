@@ -16,14 +16,17 @@ form {
   padding: 1rem;
   /* height: 100vh; */
 }
-
+input {
+background-color:#daecf6;
+border-radius: 25px;
+border: 1px solid grey;
+text-align: center;
+}
 input[type="text"],
 select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(70, 68, 68);
-  border-radius: 4px;
   resize: vertical;
 }
 
@@ -32,11 +35,12 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgb(70, 68, 68);
-  border-radius: 4px;
   resize: vertical;
 }
-
+input:hover,#country:hover
+{
+  background-color:#bce1f5;
+}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
@@ -60,7 +64,7 @@ input[type="submit"]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #b3b1b1;
 }
 
 .col-25 {
@@ -110,12 +114,16 @@ input[type="submit"]:hover {
 
 .option-class {
   color: black;
+
 }
 
 #country {
+  text-align: center;
   cursor: pointer;
   padding-left: 5px;
   color: black;
+  background-color:#daecf6;
+  border-radius: 25px;
 }
 
 .feedback-image {
@@ -129,4 +137,16 @@ input[type="submit"]:hover {
   padding-left: 17%;
   padding-right: 7%;
   font-size: 20px;
+}
+.feedback-boxes p
+{
+text-align: center;
+margin-left: 100px;
+text-transform: uppercase;
+letter-spacing:2px ;
+}
+
+textarea
+{
+  border-radius: 10px;
 }
