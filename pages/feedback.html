@@ -1,17 +1,20 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">   
-<link rel="stylesheet" href="../stylesheets/feedbackstyle.css">    
-<link rel="stylesheet" href="../stylesheets/style.css">    
-<script defer src="../scripts/nav.js"></script>
-<script defer src="../scripts/feedback.js"></script>
-</head>    
-<body>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/feedbackstyle.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <script defer src="../scripts/nav.js"></script>
+    <script defer src="../scripts/feedback.js"></script>
+  </head>
+  <body>
     <nav class="nav_checkbox">
-        <a href="/index.html">
-          <img id="logo" src="../image/logo.png" alt="Cool Logo">
+        <a href="../index.html">
+            <img id="logo" src="../image/logo.png" alt="Cool Logo">
         </a>
         <div id="ham">
           <span></span>
@@ -24,74 +27,118 @@
             <li><a class="nav-link nav-link-ltr" href="./feedback.html">FEEDBACK</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Thank you for visiting our website!</h1>
-        <p>Please provide feedback by acurately filling the information given below</p>
-    </header>  
-<section class="container">    
-  <form>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="fname">First Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="lname">Last Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>    
-      </div>    
-    </div>    
-    <div class="row">    
-        <div class="col-25">    
-          <label for="email">Mail Id</label>    
-        </div>    
-        <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id.." required>    
-        </div>    
-      </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="country">Country</label>    
-      </div>    
-      <div class="col-75">    
-        <select id="country" name="country" required>    
-          <option hidden disabled selected value>Select Country</option>    
-          <option value="australia">Australia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
-        </select>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
-      </div>    
-      <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>    
-      </div>    
-    </div>    
-    <div class="row ">  
-        <div class="col-25">    
-            <label for="feed_back"></label>    
-          </div>    
-          <div class="col-75">    
-            <input type="submit" value="Submit"> 
-          </div>   
-    </div>    
-  </form>    
-</section>    
 
-<section class="container" style="text-align: center; font-size: 40px;">
-</section>
-    
-</body>    
-</html
+    <div class="feedback-boxes">
+      <div class="left-box">
+        <h1>Thank you for visiting our website!</h1>
+        
+        <img class="feedback-image" src="../image/feedback.png" />
+      </div>
+      <div class="right-box">
+        
+        <p class="feedback-text">
+          Please provide feedback by acurately filling the information given
+          here
+        </p>
+        <section class="container">
+          <form>
+            <div class="row">
+              <div class="col-25">
+                
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Enter First name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Enter Last name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+              
+              </div>
+              <div class="col-75">
+                <input
+                  type="email"
+                  id="email"
+                  name="mailid"
+                  placeholder="Enter valid mail id"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+               
+              </div>
+              <div class="col-75">
+                <select id="country" name="country" required>
+                  <option hidden disabled selected value>Select Country</option>
+                  <option class="option-class" value="australia">Australia</option>
+                  <option class="option-class" value="canada">Canada</option>
+                  <option class="option-class" value="usa">USA</option>
+                  <option class="option-class" value="russia">Russia</option>
+                  <option class="option-class" value="japan">Japan</option>
+                  <option class="option-class" value="india">India</option>
+                  <option class="option-class" value="china">China</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+   
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="feed_back"></label>
+              </div>
+              <br>
+              <div class="col-75">
+                <input type="submit" value="Submit Feedback" />
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section
+          class="container"
+          style="text-align: center; font-size: 40px"
+        ></section>
+      </div>
+    </div>
+
+    <!-- <header>
+      <h1>Thank you for visiting our website!</h1>
+      <p>
+        Please provide feedback by acurately filling the information given below
+      </p>
+    </header> -->
+  </body>
+</html>

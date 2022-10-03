@@ -6,8 +6,8 @@
 - [x] Encodind/Decoding Function conversion into event listeners
 - [x] Light
 - [x] Nav Bar styling 
-- [ ] About section modification and addition of Images
-- [ ] redesigning of feedback form
+- [ ] About section modification and API usage
+- [x] redesigning of feedback form
 - [ ] responsive design fixes
 
 ##### HOMEPAGE :
