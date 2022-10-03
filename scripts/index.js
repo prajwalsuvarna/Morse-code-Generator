@@ -93,22 +93,55 @@ function stop(){
 
 //Light flash Functionality
 
+
+let track;
+//Check if device is a phone
+if(/Android|webOS|iPhone|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  var perm = window.confirm("Do you want to use phone flashlight to display morse as light? if yes please click ok and allow camera permission, if not, click cancel.");
+  if (perm) {
+const SMD = 'mediaDevices' in navigator;
+if (SMD) {
+  navigator.mediaDevices.enumerateDevices().then(devices => {
+  const cameras = devices.filter((device) => device.kind === 'videoinput');
+  if (cameras.length === 0) {
+  console.log("This device has not an camera");
+    }
+  const camera = cameras[cameras.length - 1];
+  navigator.mediaDevices.getUserMedia({
+  video: {
+  deviceId: camera.deviceId,
+  facingMode: ['user', 'environment'],
+      }
+    }).then(stream => {
+      track = stream.getVideoTracks()[0];
+      const imageCapture = new ImageCapture(track)
+    });
+  });
+}
+  }
+}
+
+
 let curr = 0;
 function blink(){
 if(curr < mcode.length){
   
   if(mcode[curr] == "-"){
   document.getElementById("light").style.backgroundColor = "red";
+  blinkTorch(true);
   navigator.vibrate(500);
   setTimeout(() => {
     document.getElementById("light").style.backgroundColor = "black";
+    blinkTorch(false);
   }, 500);
   setTimeout(blink, 700);
   }else if(mcode[curr] == "."){
     document.getElementById("light").style.backgroundColor = "blue";
-    navigator.vibrate(300);
+    blinkTorch(true);
+    navigator.vibrate(200);
     setTimeout(() => {
       document.getElementById("light").style.backgroundColor = "black";
+      blinkTorch(false);
     }, 300);
     setTimeout(blink, 500);   
  }else if(mcode[curr] == " "){
@@ -118,5 +151,13 @@ if(curr < mcode.length){
 }else{
   curr = 0;
 }
+}
 
+
+function blinkTorch(state){
+if(track){
+  track.applyConstraints({
+    advanced: [{torch: state}]
+  });
+}
 }
