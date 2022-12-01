@@ -22,6 +22,7 @@ let mcode=[];
 
 // Encoding part :
 const Enc=document.getElementById("eng-text");
+Enc.focus() = true;
 Enc.addEventListener("keyup", () => { 
 a=document.getElementById("eng-text").value.toUpperCase();
 a= a.split("");
